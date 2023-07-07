@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="966.0" prefWidth="1207.0" style="-fx-background-color: #303030;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projkecik.Controllers.ActualReservationController">
+   <children>
+      <TableView fx:id="resTable" layoutX="15.0" layoutY="155.0" prefHeight="716.0" prefWidth="920.0" stylesheets="@style.css">
+         <columns>
+            <TableColumn fx:id="DateZ" prefWidth="143.0" text="Data Zameldowania" />
+            <TableColumn fx:id="DateO" prefWidth="143.0" text="Data Odmeldowania" />
+            <TableColumn fx:id="roomId" prefWidth="250.0" text="Apartament" />
+            <TableColumn fx:id="guestId" prefWidth="285.0" text="Osoba Rezerująca Pobyt" />
+            <TableColumn fx:id="guestNumber" prefWidth="98.0" text="Ilość Osób" />
+         </columns>
+      </TableView>
+      <ImageView fitHeight="237.0" fitWidth="236.0" layoutX="959.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/tak.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="StronaGlowna" layoutX="941.0" layoutY="264.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="269.0" stylesheets="@style.css" text="Strona Główna" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="DodanieRezer" layoutX="941.0" layoutY="338.0" mnemonicParsing="false" onAction="#ZmianaScenyRezerwacja" prefHeight="74.0" prefWidth="269.0" stylesheets="@style.css" text="Dodanie Rezerwacji" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="DodanieGosc" layoutX="941.0" layoutY="412.0" mnemonicParsing="false" onAction="#ZmianaScenyDodanieGosc" prefHeight="74.0" prefWidth="269.0" stylesheets="@style.css" text="Dodanie Gościa" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="DodanieApart" layoutX="941.0" layoutY="486.0" mnemonicParsing="false" onAction="#ZmianaScenyDodanieApart" prefHeight="74.0" prefWidth="269.0" stylesheets="@style.css" text="Lista Pokojów" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="Wyjscie" layoutX="941.0" layoutY="892.0" mnemonicParsing="false" onAction="#ZmianaScenyWyjscie" prefHeight="74.0" prefWidth="269.0" stylesheets="@style.css" text="Wyjście" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Text fill="WHITE" layoutX="14.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Strona Główna" wrappingWidth="330.13671875">
+         <font>
+            <Font name="Arial Bold" size="40.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="257.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aktualne Rezerwacje" textAlignment="CENTER" wrappingWidth="422.13671875">
+         <font>
+            <Font name="Arial Bold" size="40.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
